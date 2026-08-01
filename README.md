@@ -18,7 +18,16 @@ A secure, lightweight Point of Sale (POS) system built with PHP and MySQL, featu
 
 ---
 
-## Setup & Installation
+## Running with Docker
+
+- **Prerequisite**: Docker + Docker Compose installed.
+- **Command**: `docker compose up --build`
+- **URL**: http://localhost:8080
+- **Note**: The schema (`database/schema.sql`) only auto-runs on the *first* container start for a fresh volume. If you need to reset the DB, you must `docker compose down -v` first (this deletes the `db_data` volume).
+
+---
+
+## Setup & Installation (Local)
 
 1. **Clone & Place Repository**:
    Copy the project folder into your web server document root (e.g., `C:\xampp\htdocs\Basic POS`).
@@ -34,10 +43,10 @@ A secure, lightweight Point of Sale (POS) system built with PHP and MySQL, featu
      ```php
      return [
          'db' => [
-             'host' => 'localhost',
+             'host' => 'db',
              'name' => 'pos_system',
              'user' => 'root',
-             'pass' => ''
+             'pass' => 'rootpass'
          ]
      ];
      ```
