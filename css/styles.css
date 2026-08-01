@@ -1,0 +1,277 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="month"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="date"] {
+    width: auto;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%; 
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    width: 100%;
+}
+
+table {
+    table-layout: auto;
+    word-wrap: break-word;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.success-message {
+    color: green;
+    margin-bottom: 15px;
+}
+
+.container { 
+    width: 750px;
+    max-width: 95%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+ul li a:hover {
+    background-color: #ddd;
+    text-decoration: none;
+}
+
+tfoot {
+    font-weight: bolder;
+}
+
+/* Styles for the login form AND its container */
+.login-container {
+    width: 100%;
+    padding-top: 20px;
+    text-align: center; /* Center the content horizontally */
+}
+
+.login-form {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto; /* Keep horizontal centering */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-block; 
+}
+
+.login-form label {
+    margin-bottom: 2px;
+    display: block;
+    width: 100%
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 6px;
+    margin-bottom: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-form input[type="submit"] {
+    padding: 6px 10px;
+    font-size: 13px;
+    width: 100%;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+}
+
+.input-group-text {
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    padding: 8px;
+    background-color: #eee;
+    position: relative;
+    z-index: 2;
+}
+
+#cash_tendered,
+#price {
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    padding-left: 8px;
+    flex-grow: 1;
+}
+
+/*Button Styles*/
+
+/* Style for change role button */
+.change-role-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.change-role-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the Reset Cart button */
+.reset-cart-btn {
+    display: inline-block;
+    background-color: #f44336;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.reset-cart-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Style for the Cancel Item button */
+.cancel-item-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.cancel-item-btn:hover {
+    background-color: #c82333;
+}
+
+/* Style for the Update Stock button */
+.update-stock-btn {
+    background-color: #28a745; 
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 5px; 
+}
+
+.update-stock-btn:hover {
+    background-color: #218838;
+}
+
+/* Style for the Delete Product button */
+.delete-product-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 5px;
+    text-decoration: none; 
+}
+
+.delete-product-btn:hover {
+    background-color: #c82333; 
+}
